@@ -1,0 +1,60 @@
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.buttonsDiv {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add {
+  background-color: #86f38a;
+  border: 2px solid #148318;
+}
+.add:hover {
+  background-color: #59f161;
+  transform: scale(1.1);
+}
+
+.subtract {
+  background-color: #ee8f88;
+  border: 2px solid #b63c33;
+}
+.subtract:hover {
+  background-color: #f44b48;
+  transform: scale(1.1);
+}
+
+.subtract:disabled {
+  background-color: #f0cdcaaa;
+  border: 2px solid #eba5a0;
+  color: rgb(206, 204, 204);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.subtract:disabled:hover {
+  background-color: #f0cdcaaa;
+}
+
+.btn:active {
+  transform: scale(1.05);
+  box-shadow: inset 4px 4px 7px rgba(2, 2, 2, 0.2);
+}
